@@ -1,10 +1,9 @@
-# POPLIN
+# Delay-Aware Model-Based Reinforcement Learning
 <p align=center>
-<img src="img/reward.png" width=800>
+<img src="img/result.png" width=800>
 </p>
 
-[Arxiv Link](https://arxiv.org/abs/1906.08649)
-**Abstract** Model-based reinforcement learning (MBRL) with model-predictive control or online planning has shown great potential for locomotion control tasks in terms of both sample efficiency and asymptotic performance. However, the existing planning methods search from candidate sequences that are randomly generated in the action space. We argue that random action search is inefficient in complex high-dimensional environments. In this paper, we propose a novel MBRL algorithm, model-based policy planning (POPLIN), that combines policy networks with online planning. More specifically, we formulate action planning at each time-step as an optimization problem using neural networks. We experiment with both optimization w.r.t. the action sequences initialized from the policy network, and also online optimization directly w.r.t. the parameters of the policy network. We show that POPLIN obtains state-of-the-art performance in the MuJoCo benchmarking environments, being about 3x more sample efficient than the state-of-the-art algorithms, such as PETS, TD3 and SAC. To explain the effectiveness of our algorithm, we show that the optimization surface in parameter space is smoother than in action space. Further more, we found the distilled policy network can be effectively applied without the expansive model predictive control during test time for some environments such as Cheetah.
+**Abstract** Action delay prevalently exists in real world systems and is one of the key reasons leading to degraded performance of reinforcement learning. In this paper, we introduce a formal definition of delayed Markov Decision Process and prove it can be transformed into standard MDP with augmented states using Markov reward process. We then develop a delay-aware model-based reinforcement learning framework to directly incorporate the multi-step delay into the learned system models without learning effort. Experiments are conducted on the Gym and MuJoCo platforms. Results show that compared with off-policy model-free reinforcement learning methods, the proposed delay-aware model-based algorithm is more efficient in training and transferable between systems with variant durations of delay.
 
 ### Performance
 Below are some of the benchmarking results of POPLIN compared with other state-of-the-art algorithms
