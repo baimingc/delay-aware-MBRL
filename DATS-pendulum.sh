@@ -1,5 +1,5 @@
 #!/bin/bash
-python mbexp.py -logdir ./log/PETS \
+python mbexp.py -logdir ./log/DATS \
     -env gym_pendulum \
     -o exp_cfg.exp_cfg.ntrain_iters 200 \
     -o exp_cfg.sim_cfg.delay_hor 10\
