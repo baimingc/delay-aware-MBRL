@@ -31,7 +31,7 @@ This repo is based on the PETS repo. And therefore we use the same hyper-paramet
 
 ### Environment Arguments
 
-The benchmark environment is based on [MBBL](https://github.com/WilsonWangTHU/mbbl)
+The benchmark environment is based on [MBBL](https://github.com/WilsonWangTHU/mbbl).
 ```
 python scripts/mbexp.py
     -env    (required) The name of the environment. Select from
